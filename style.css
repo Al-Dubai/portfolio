@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body {
+background: linear-gradient(135deg, #1c100b 0%, #512d1e 50%, #1c100b 100%);
+}
 
 /* --- 2. Main Navbar Styling --- */
 .header {
@@ -124,7 +127,6 @@
 
 /* here start dashboard*/
 .dashboard {
-    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
     color: #ffffff;
     height: 100%;
     width: 100%;
@@ -156,15 +158,49 @@ td {
 .dashboard .dashboardText {
     display: flex;
     align-items: center;
-    color: rgb(38, 25, 159);
+    color: rgb(180, 178, 198);
     margin-left: 40%;
     margin-top: 90px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
 
+/* here start index*/
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.home .text {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+}
+.home .text h4{
+    color:#ffc107;
+}
+.home .text h1{
+    color:#a6a49d;
+}
+.home .text h2{
+    color:#383835;
+}
+.home .text p {
+    color: rgb(253, 249, 249);
+   width: 800px;
+    font-size: 35px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+}
+.home .text a{
+    color:gold;
+}
+
 /*here start about / who am i */
 .about {
-    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
     color: #ffffff;
     height: 100vh;
     background-size: cover;
@@ -189,7 +225,7 @@ td {
 }
 
 .about .text p {
-    color: rgb(15, 13, 13);
+    color: rgb(253, 249, 249);
    width: 800px;
     font-size: 35px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);

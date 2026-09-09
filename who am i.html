@@ -1,68 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hesham</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo.png" />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="custom-navbar">
-            <!-- Logo -->
-            <a href="index.html" class="brand">Hesham</a>
-            
-            <!-- Mobile Hamburger Button -->
-            <button class="hamburger" id="hamburger-btn">
-                Menu
-            </button>
+      <nav class="custom-navbar">
+        <!-- Logo -->
+        <a href="index.html" class="brand">Hesham</a>
 
-            <!-- Navigation Links -->
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="who am i.html">Who am I?</a></li>
-                <li><a href="why it.html">Why it?</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                
-                <!-- Dropdown Menu -->
-                <li class="dropdown">
-                    <a href="blog.html">Blog</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="goals.html">Goals</a></li>
-                        <li><a href="direction.html">Direction</a></li>
-                    </ul>
-                </li>
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger" id="hamburger-btn">Menu</button>
 
-                <!-- Resume Link -->
-                <li><a href="cv/cv.pdf" download class="resume-btn">Resume</a></li>
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="who am i.html">Who am I?</a></li>
+          <li><a href="why it.html">Why it?</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+
+          <!-- Dropdown Menu -->
+          <li class="dropdown">
+            <a href="blog.html">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a href="goals.html">Goals</a></li>
+              <li><a href="direction.html">Direction</a></li>
             </ul>
-        </nav>
+          </li>
+
+          <!-- Resume Link -->
+          <li><a href="cv/cv.pdf" download class="resume-btn">Resume</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="about">
-         <div class="text">
-   <h3>Who am i</h3>
-    <p>I am an ICT student who enjoys working
-        with computers and learning about technology.
-        I have an interest in computer systems, networking,
-        software, and troubleshooting. I am willing to learn,
-        work well with others, and take responsibility for my work.
-        I am looking to improve my technical skills, gain experience,
-        and build a career in the ICT field.</p>
-        </div>
-
+      <a href="#" src="img/self.png" alt=""></a>
+      <div class="text">
+        <h3>Who am i</h3>
+        <p>
+          I'm an enthusiastic and hands-on person with a genuine interest in
+          technology and computers. I enjoy working with others, communicating
+          openly, and contributing to a positive team environment. I'm always
+          eager to learn new things, take on new challenges, and continuously
+          develop my skills. Also i studied Medical for two years ,but i choose
+          to chase my dream. I don't want to regret it later
+        </p>
+      </div>
     </section>
 
     <!-- Script for mobile menu -->
     <script>
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const navMenu = document.getElementById('nav-menu');
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const navMenu = document.getElementById("nav-menu");
 
-        hamburgerBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+      hamburgerBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
     </script>
-</body>
+  </body>
 </html>
