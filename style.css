@@ -1,64 +1,196 @@
-/*  background color*/
-body {
-    background: linear-gradient(rgba(154, 141, 57, 0.75), rgba(0, 0, 0, 0.75));
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+/* --- 1. Basic Resets --- */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-/* Make images and media scale inside containers without overflowing */
-img,
-video {
-    max-width: 100%;
-    height: auto;
+/* --- 2. Main Navbar Styling --- */
+.header {
+    background-color: #212529; /* Dark background */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Semi-transparent dark background for text readability */
-.content-card {
-    background-color: rgba(15, 23, 42, 0.719);
-    /* Dark slate with 85% opacity */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);}
-
-.text h4 {
-    color: yellow;
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
 }
 
-/* hide the items in blog*/
-.hidden-items {
-    display: none;
+.brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* --- 3. Navigation Menu --- */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: rgba(255, 255, 255, 0.7); /* Light grey text */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: white; /* Bright white on hover/active */
+}
+
+.resume-btn {
+    color: #ffc107 !important; /* Yellow warning color */
+    font-weight: bold;
+}
+
+/* --- 4. Dropdown Styling (Blog) --- */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #212529;
-    min-width: 120px;
+    list-style: none;
+    min-width: 140px;
+    padding: 10px 0;
     border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     z-index: 1000;
 }
 
-.menu:hover .hidden-items {
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+/* The Magic: Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/*start here who am i*/
-.image-who {
-    width: 25%;
-    position: center;
-}
-
-.image-who .person {
-    margin-top: -350px;
-    border-radius: 45%;
-    width: 25%;
-}
-.text-who p {
+/* --- 5. Mobile Responsiveness --- */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
     color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
-    width: auto;
-    position: center;
+    font-size: 1.8rem;
+    cursor: pointer;
 }
 
-.text-who h3 {
-    color: rgba(255, 145, 0, 0.489);
+/* Mobile Screens (Tablets and smaller) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger buttom */
+    }
+
+    .nav-menu {
+        display: none; /* Hide menu */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Below the header */
+        left: 0;
+        background-color: #212529;
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    /* Shows menu when button is clicked via JavaScript */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    /* Adjust dropdown for mobile layout */
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+}
+
+/* here start dashboard*/
+.dashboard {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+table,
+th,
+td {
+    border: 2px solid wheat;
+    border-collapse: collapse;
+    justify-self: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    padding: 10px 50px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+}
+
+.dashboard .hz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+
+.dashboard .dashboardText {
+    display: flex;
+    align-items: center;
+    color: rgb(38, 25, 159);
+    margin-left: 40%;
+    margin-top: 90px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+}
+
+/*here start about / who am i */
+.about {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    color: #ffffff;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.about .text h3 {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: rgb(199, 146, 248);
+    font-size: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+}
+
+.about .text p {
+    color: rgb(15, 13, 13);
+   width: 800px;
+    font-size: 35px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
