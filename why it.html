@@ -15,7 +15,7 @@
             <a href="index.html" class="brand">Hesham</a>
             
             <!-- Mobile Hamburger Button -->
-            <button class="hamburger" id="hamburger-btn">
+            <button class="menu-btn" id="menu-btn">
                 Menu
             </button>
 
@@ -53,10 +53,10 @@
 
     <!-- Script for mobile menu -->
     <script>
-        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const menubtn = document.getElementById('menu-btn');
         const navMenu = document.getElementById('nav-menu');
 
-        hamburgerBtn.addEventListener('click', () => {
+        menubtn.addEventListener('click', () => {
             navMenu.classList.toggle('active');
         });
     </script>

@@ -15,7 +15,7 @@
         <a href="index.html" class="brand">Hesham</a>
 
         <!-- Mobile Hamburger Button -->
-        <button class="hamburger" id="hamburger-btn">Menu</button>
+        <button class="menu-btn" id="menu-btn">Menu</button>
 
         <!-- Navigation Links -->
         <ul class="nav-menu" id="nav-menu">
@@ -39,26 +39,28 @@
       </nav>
     </header>
     <section class="about">
-      <a href="#" src="img/self.png" alt=""></a>
+      <img src="img/self.png" width="200px" alt="Hesham" />
       <div class="text">
         <h3>Who am i</h3>
         <p>
-          I'm an enthusiastic and hands-on person with a genuine interest in
-          technology and computers. I enjoy working with others, communicating
-          openly, and contributing to a positive team environment. I'm always
-          eager to learn new things, take on new challenges, and continuously
-          develop my skills. Also i studied Medical for two years ,but i choose
-          to chase my dream. I don't want to regret it later
+          I am a hardworking and honest person who always tries to improve
+          myself. I have studied General Medical for two and a half years. I am
+          also interested in web development and coding. I enjoy solving
+          problems and searching for solutions when I face challenges. I am a
+          good communicator and I enjoy working with other people. In my free
+          time, I like watching anime and playing games on my PS5. I also love
+          cats and enjoy spending time with them. My goal is to keep learning
+          new skills and become successful in the future.
         </p>
       </div>
     </section>
 
     <!-- Script for mobile menu -->
     <script>
-      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const menubtn = document.getElementById("menu-btn");
       const navMenu = document.getElementById("nav-menu");
 
-      hamburgerBtn.addEventListener("click", () => {
+      menubtn.addEventListener("click", () => {
         navMenu.classList.toggle("active");
       });
     </script>
