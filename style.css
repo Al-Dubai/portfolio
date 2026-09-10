@@ -6,7 +6,7 @@
   font-family: sans-serif;
 }
 body {
-  background: linear-gradient(135deg, #1c100b 0%, #512d1e 50%, #1c100b 100%);
+  background: linear-gradient(135deg, #1c100b 0%, #79432d 50%, #1c100b 100%);
 }
 
 /* --- 2. Main Navbar Styling --- */
@@ -126,11 +126,10 @@ body {
 
 /* here start dashboard*/
 .dashboard {
-  color: #ffffff;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
+ height: 100%;
+ width: 100%;
+ background-size: cover;
+ background-position: center;
 }
 
 table,
@@ -144,6 +143,7 @@ td {
   color: white;
   padding: 10px 50px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+  
 }
 
 .dashboard .hz {
@@ -154,7 +154,7 @@ td {
 }
 
 .dashboard .dashboardText {
-  display: flex;
+    display: flex;
   align-items: center;
   color: rgb(180, 178, 198);
   margin-left: 40%;
@@ -208,6 +208,7 @@ td {
 .about img {
   border-radius: 30%;
   margin-right: 20px;
+  margin-bottom:30%;
 }
 .about .text h3 {
   align-items: center;
