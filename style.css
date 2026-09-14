@@ -125,6 +125,12 @@ body {
 }
 
 /* here start dashboard*/
+@media screen and (max-width: 600px) { .table-container,
+  table,.header, .data, th, td, tr {
+    display:block;
+  } 
+  
+}
 .dashboard {
  height: 100%;
  width: 100%;
@@ -132,10 +138,17 @@ body {
  background-position: center;
 }
 
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 table,
 th,
 td {
   border: 2px solid wheat;
+  width: 100%;
   border-collapse: collapse;
   justify-self: center;
   margin-top: 5%;
