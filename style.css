@@ -1,4 +1,4 @@
-/* --- 1. Basic Resets --- */
+/*  Basic Resets   */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
   background: linear-gradient(135deg, #1c100b 0%, #79432d 50%, #1c100b 100%);
 }
 
-/* --- 2. Main Navbar Styling --- */
+/*   Main Navbar Styling  */
 .header {
   background-color: #212529; /* Dark background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ body {
   font-weight: bold;
 }
 
-/* --- 4. Dropdown Styling (Blog) --- */
+/*  Dropdown Styling (Blog)  */
 .dropdown {
   position: relative;
 }
@@ -83,7 +83,7 @@ body {
   display: block;
 }
 
-/* --- 5. Mobile Responsiveness --- */
+/*   Mobile Responsiveness  */
 .menu-btn {
   display: none; /* Hidden on desktop */
   background: none;
@@ -93,7 +93,7 @@ body {
   cursor: pointer;
 }
 
-/* Mobile Screens (Tablets and smaller) */
+/* Mobile Screens */
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
