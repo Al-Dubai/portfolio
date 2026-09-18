@@ -131,6 +131,10 @@ body {
   table,.header, .data, th, td, tr {
     display:block;
   } 
+  .about img{
+    margin-top: auto;
+    margin-left: auto;
+  }
   
 }
 .dashboard {
@@ -221,6 +225,9 @@ td {
   margin-top: 10%;
 }
 .about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   border-radius: 30%;
   margin-right: 20px;
   margin-bottom:30%;
@@ -251,10 +258,12 @@ td {
   color:gold;
   height: 100%;
   margin-right: 20px;
+ font-size: 30px;
 }
 .why-it p{
   color:aliceblue;
-  max-width: 800px;
-  font-size:auto;
+  max-width: 900px;
+  font-size:25px;
   justify-content:space-between;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
