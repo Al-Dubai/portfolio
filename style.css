@@ -131,9 +131,9 @@ body {
   table,.header, .data, th, td, tr {
     display:block;
   } 
-  .about img{
+  /* the image in the about section */
+  .img-s{
     margin-top: auto;
-    margin-left: auto;
   }
   
 }
@@ -148,8 +148,11 @@ body {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-}
 
+}
+.data .quarter-num{
+  color:rgb(145, 255, 0);
+}
 table,
 th,
 td {
