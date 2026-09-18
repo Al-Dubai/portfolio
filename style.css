@@ -127,45 +127,49 @@ body {
 }
 
 /* here start dashboard*/
-@media screen and (max-width: 600px) { .table-container,
-  table,.header, .data, th, td, tr {
-    display:block;
-  } 
-  /* the image in the about section */
-  .img-s{
+@media screen and (max-width: 5%) {
+  .table-container table,
+  .header,
+  .data,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* the image in the -about- section */
+  .img-s {
     margin-top: auto;
   }
-  
 }
 .dashboard {
- height: 100%;
- width: 100%;
- background-size: cover;
- background-position: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .table-container {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-
 }
-.data .quarter-num{
-  color:rgb(145, 255, 0);
+.data .quarter-num {
+  color: rgb(145, 255, 0);
 }
 table,
 th,
 td {
-  border: 2px solid wheat;
-  width: 100%;
-  border-collapse: collapse;
+  border: 5px solid wheat;
+  width: auto;
+  border-collapse: separate;
   justify-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
   color: white;
   padding: 10px 50px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
-  
+  border-style: groove;
 }
 
 .dashboard .hz {
@@ -176,10 +180,10 @@ td {
 }
 
 .dashboard .dashboardText {
-    display: flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   color: rgb(180, 178, 198);
-  margin-left: 40%;
   margin-top: 90px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
@@ -191,6 +195,7 @@ td {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  
 }
 
 .home .text {
@@ -216,8 +221,10 @@ td {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
 .home .text a {
-  color: gold;
-}
+  color: gold;}
+  .img-h{
+    padding: 10px;
+  }
 
 /*here start about / who am i */
 .about {
@@ -227,13 +234,22 @@ td {
   min-height: 100vh;
   margin-top: 10%;
 }
+.about .img-s{
+align-items: center;
+align-content: center;
+margin-bottom: auto;
+
+}
 .about img {
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: 30%;
-  margin-right: 20px;
-  margin-bottom:30%;
+  margin-bottom: 30%;
+  
+}
+.about text{
+  align-content: center;
 }
 .about .text h3 {
   align-items: center;
@@ -242,6 +258,7 @@ td {
   font-size: 30px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
   color: #ff3dc8;
+  
 }
 
 .about .text p {
@@ -251,22 +268,22 @@ td {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
 /*here start Why It*/
-.why-it{
- display: flex;
+.why-it {
+  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
-.why-it h2{
-  color:gold;
+.why-it h2 {
+  color: gold;
   height: 100%;
   margin-right: 20px;
- font-size: 30px;
+  font-size: 30px;
 }
-.why-it p{
-  color:aliceblue;
+.why-it p {
+  color: aliceblue;
   max-width: 900px;
-  font-size:25px;
-  justify-content:space-between;
+  font-size: 25px;
+  justify-content: space-between;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
