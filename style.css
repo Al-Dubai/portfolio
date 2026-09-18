@@ -97,6 +97,8 @@ body {
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
+    text-align: center;
+    text-size-adjust: auto;
   }
 
   .nav-menu {
@@ -237,4 +239,22 @@ td {
   max-width: 800px;
   font-size: 35px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+}
+/*here start Why It*/
+.why-it{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.why-it h2{
+  color:gold;
+  height: 100%;
+  margin-right: 20px;
+}
+.why-it p{
+  color:aliceblue;
+  max-width: 800px;
+  font-size:auto;
+  justify-content:space-between;
 }
