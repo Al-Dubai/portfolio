@@ -238,8 +238,15 @@ td {
 align-items: center;
 align-content: center;
 margin-bottom: auto;
+margin-right: 10px;
 
 }
+.img-r{
+  display: flex;
+  direction: row;
+  gap:10px;
+}
+
 .about img {
   max-width: 100%;
   height: auto;
