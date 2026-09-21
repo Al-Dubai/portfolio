@@ -153,6 +153,7 @@ body {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  
 }
 .data .quarter-num {
   color: rgb(145, 255, 0);
@@ -160,9 +161,8 @@ body {
 table,
 th,
 td {
+  max-width: 900px;
   border: 5px solid wheat;
-  width: auto;
-  border-collapse: separate;
   justify-self: center;
   margin-top: 5%;
   margin-bottom: 5%;
