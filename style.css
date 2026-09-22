@@ -31,7 +31,7 @@ body {
   text-decoration: none;
 }
 
-/* --- 3. Navigation Menu --- */
+/*  Navigation Menu  */
 .nav-menu {
   list-style: none;
   display: flex;
@@ -142,6 +142,7 @@ body {
     margin-top: auto;
   }
 }
+/* dashboards html*/
 .dashboard {
   height: 100%;
   width: 100%;
@@ -149,16 +150,12 @@ body {
   background-position: center;
 }
 
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  
-}
+
 .data .quarter-num {
-  color: rgb(145, 255, 0);
+  color: gold;
+  font-size: large;
 }
-table,
+.tableDashoard,
 th,
 td {
   max-width: 900px;
@@ -172,18 +169,14 @@ td {
   border-style: groove;
 }
 
-.dashboard .hz {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 150px;
+.hz {
+  margin-top: 5%;
+  text-align: center;
 }
 
 .dashboard .dashboardText {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(180, 178, 198);
+  text-align: center;
+  color:gold;
   margin-top: 90px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
@@ -195,7 +188,6 @@ td {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  
 }
 
 .home .text {
@@ -221,10 +213,11 @@ td {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
 .home .text a {
-  color: gold;}
-  .img-h{
-    padding: 10px;
-  }
+  color: gold;
+}
+.img-h {
+  padding: 10px;
+}
 
 /*here start about / who am i */
 .about {
@@ -234,17 +227,16 @@ td {
   min-height: 100vh;
   margin-top: 10%;
 }
-.about .img-s{
-align-items: center;
-align-content: center;
-margin-bottom: auto;
-margin-right: 10px;
-
+.about .img-s {
+  align-items: center;
+  align-content: center;
+  margin-bottom: auto;
+  margin-right: 10px;
 }
-.img-r{
+.img-r {
   display: flex;
   direction: row;
-  gap:10px;
+  gap: 10px;
 }
 
 .about img {
@@ -253,9 +245,8 @@ margin-right: 10px;
   display: block;
   border-radius: 30%;
   margin-bottom: 30%;
-  
 }
-.about text{
+.about text {
   align-content: center;
 }
 .about .text h3 {
@@ -265,7 +256,6 @@ margin-right: 10px;
   font-size: 30px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
   color: #ff3dc8;
-  
 }
 
 .about .text p {
@@ -293,4 +283,57 @@ margin-right: 10px;
   font-size: 25px;
   justify-content: space-between;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* here start goals */
+
+.goals{
+  margin-top: 50px;
+  min-height: 100vh;
+  
+}
+.textGoals{
+  text-align: center;
+  color:gold;
+  margin-top: 90px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+  
+}
+.textgoal{
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+  text-align: center;
+}
+.textgoal h3{
+  margin-bottom:10px;
+  color: green;
+  font-size: large;
+}
+.textgoal h2{
+  color: gold;
+}
+.textgoal p{
+  color: white;
+}
+.tableGoals{
+   max-width: 900px;
+  border: 5px solid wheat;
+  justify-self: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: white;
+  
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
+  border-style:dotted;
+}
+.good{
+  color:greenyellow;
+}
+.bad{
+  color: red;
 }

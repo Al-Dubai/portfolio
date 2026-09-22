@@ -1,58 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hesham</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" type="image/png" href="img/logo.png" />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="custom-navbar">
-            <!-- Logo -->
-            <a href="index.html" class="brand">Hesham</a>
-            
-            <!-- Mobile menu Button -->
-            <button class="menu-btn" id="menu-btn">
-                Menu
-            </button>
+      <nav class="custom-navbar">
+        <!-- Logo -->
+        <a href="index.html" class="brand">Hesham</a>
 
-            <!-- Navigation Links -->
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="who am i.html">Who am I?</a></li>
-                <li><a href="why it.html">Why it?</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                
-                <!-- Dropdown Menu -->
-                <li class="dropdown">
-                    <a href="blog.html">Blog</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="goals.html">Goals</a></li>
-                        <li><a href="direction.html">Direction</a></li>
-                    </ul>
-                </li>
+        <!-- Mobile menu Button -->
+        <button class="menu-btn" id="menu-btn">Menu</button>
 
-                <!-- Resume Link -->
-                <li><a href="cv/cv.pdf" download class="resume-btn">Resume</a></li>
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="who am i.html">Who am I?</a></li>
+          <li><a href="why it.html">Why it?</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+
+          <!-- Dropdown Menu -->
+          <li class="dropdown">
+            <a href="blog.html">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a href="goals.html">Goals</a></li>
+              <li><a href="direction.html">Direction</a></li>
             </ul>
-        </nav>
+          </li>
+
+          <!-- Resume Link -->
+          <li><a href="cv/cv.pdf" download class="resume-btn">Resume</a></li>
+        </ul>
+      </nav>
     </header>
+
     <section class="goals">
-         
+      <div class="textGoals"><h1>SWOT Analysis</h1></div>
+      <table class="tableGoals">
+        <tr class="dataGoal">
+          <td rowspan="1" class="good">Strengths</td>
+
+          <td>I love working with other people and communicating clearly.</td>
+          <td>I am realy good at managing my time and hitting deadlines.</td>
+        </tr>
+        <tr class="dataGoal">
+          <td rowspan="1" class="good">Opportunities</td>
+
+          <td>
+            I can use my study to figure out how to translate my medical
+            background into ICT.
+          </td>
+          <td>
+            The group project will let me practice building apps that actually
+            help people.
+          </td>
+        </tr>
+
+        <tr class="dataGoal">
+          <td rowspan="1" class="bad">Weakneses</td>
+
+          <td>
+            sometimes I delay doing Project when I feel that the project too big
+            or overwhelming.
+          </td>
+          <td>
+            I can lose my concentration if i have to read a lot of dry theory.
+          </td>
+        </tr>
+        <tr class="dataGoal">
+          <td rowspan="1" class="bad">Threats</td>
+
+          <td>Trying to balance my homework with my Personal life.</td>
+          <td>
+            Falling behind if a project feels too big and i don't know where to
+            start
+          </td>
+        </tr>
+      </table>
+
+      <div class="textgoal">
+        <h3>My Smart goal</h3>
+        <p>
+          Because I lose concentration reading dry theory, I will break my
+          reading assignments into smaller chunks by reading for exactly 25
+          minutes, followed by a 5-minute break, completing all my theory
+          reading before going to sleep.
+        </p>
+        <h2>My Mission This Year</h2>
+        <p>
+          This year, my mission is to take my passion for problem solving and apply it to take it to coding.
+          I want to really understand the logic behind programming so, i can create application that are 
+          genuinely helpfull to use.I know the HPO-ICT program will be tough, but by staying disciplined with my planning
+          and leaning on my teamwork skills,I'm determined to successfully finish my first year. 
+        </p>
+      </div>
     </section>
 
     <!-- Script for mobile menu -->
     <script>
-        const menubtn = document.getElementById('menu-btn');
-        const navMenu = document.getElementById('nav-menu');
+      const menubtn = document.getElementById("menu-btn");
+      const navMenu = document.getElementById("nav-menu");
 
-        menubtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+      menubtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
     </script>
-</body>
+  </body>
 </html>
