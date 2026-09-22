@@ -284,6 +284,23 @@ td {
   justify-content: space-between;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+/*here start Blog */
+.blog{
+   margin-top: 50px;
+  min-height: 100vh;
+}
+.bolgText{
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+  text-align: center;
+}
+
 /* here start goals */
 
 .goals{
@@ -310,11 +327,14 @@ td {
   text-align: center;
 }
 .textgoal h3{
+  margin-top: 10px;
   margin-bottom:10px;
   color: green;
   font-size: large;
 }
 .textgoal h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: gold;
 }
 .textgoal p{
