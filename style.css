@@ -167,6 +167,7 @@ td {
   padding: 10px 50px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
   border-style: groove;
+  border-radius: 25px;
 }
 
 .hz {
@@ -264,6 +265,7 @@ td {
   font-size: 35px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
 }
+
 /*here start Why It*/
 .why-it {
   display: flex;
@@ -284,6 +286,7 @@ td {
   justify-content: space-between;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
 /*here start Blog */
 .blog{
    margin-top: 50px;
@@ -323,22 +326,25 @@ td {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   box-shadow:0 10px 20px rgba(0, 0, 0, 0.5);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   text-align: center;
 }
 .textgoal h3{
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom:10px;
   color: green;
-  font-size: large;
+  font-size: 35px;
+
 }
 .textgoal h2{
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 10px;
   color: gold;
+  font-size: 35px;
 }
 .textgoal p{
   color: white;
+  font-size: 30px;
 }
 .tableGoals{
    max-width: 900px;
@@ -347,9 +353,10 @@ td {
   margin-top: 5%;
   margin-bottom: 5%;
   color: white;
-  
+  font-size: 20px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
-  border-style:dotted;
+  border-radius:  25px;
+  border-style:groove;
 }
 .good{
   color:greenyellow;
