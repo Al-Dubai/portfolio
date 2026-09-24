@@ -51,7 +51,7 @@ body {
   color: white;
 }
 .resume-btn {
-  color: #ffc107 !important; /* Yellow warning color */
+  color: #ffc107 !important;
   font-weight: bold;
 }
 
@@ -93,25 +93,7 @@ body {
   cursor: pointer;
 }
 
-/* Mobile Screens */
-@media (max-width: 768px) {
-  .menu-btn {
-    display: block;
-    text-align: center;
-    text-size-adjust: auto;
-  }
 
-  .nav-menu {
-    display: none; /* Hide menu */
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 60px; /* Below the header */
-    left: 0;
-    background-color: #212529;
-    padding: 20px 0;
-    z-index: 999;
-  }
 
   /* Shows menu when button is clicked via JavaScript */
   .nav-menu.active {
@@ -124,25 +106,11 @@ body {
     box-shadow: none;
     padding-left: 20px;
   }
-}
+
 
 /* here start dashboard*/
-@media screen and (max-width: 5%) {
-  .table-container table,
-  .header,
-  .data,
-  th,
-  td,
-  tr {
-    display: block;
-  }
 
-  /* the image in the -about- section */
-  .img-s {
-    margin-top: auto;
-  }
-}
-/* dashboards html*/
+
 .dashboard {
   height: 100%;
   width: 100%;
@@ -164,10 +132,11 @@ td {
   margin-top: 5%;
   margin-bottom: 5%;
   color: white;
-  padding: 10px 50px;
+  padding: 5px 25px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 9);
   border-style: groove;
   border-radius: 25px;
+  font-size: large;
 }
 
 .hz {
