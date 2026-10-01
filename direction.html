@@ -17,9 +17,9 @@
             <a href="index.html" class="brand">Hesham</a>
             
             <!-- Mobile menu Button -->
-            <button class="menu-btn" id="menu-btn">
+           <!-- <button class="menu-btn" id="menu-btn">
               Menu
-            </button>
+            </button> -->
 
             <!-- Navigation Links -->
             <ul class="nav-menu" id="nav-menu">
@@ -29,13 +29,14 @@
                 <li><a href="dashboard.html">Dashboard</a></li>
                 
                 <!-- Dropdown Menu -->
-                <li class="dropdown">
+                 <div class="menu-btn"><li class="dropdown">
                     <a href="blog.html">Blog</a>
                     <ul class="dropdown-menu">
-                        <li><a href="goals.html">Goals</a></li>
+                        <a href="goals.html">Goals</a></li>
                         <li><a href="direction.html">Direction</a></li>
                     </ul>
-                </li>
+                </li></div>
+
 
                 <!-- Resume Link -->
                 <li><a href="cv/cv.pdf" download class="resume-btn">Resume</a></li>
@@ -54,14 +55,6 @@
 
     </section>
 
-    <!-- Script for mobile menu -->
-    <script>
-        const menu_btn = document.getElementById('menu-btn');
-        const navMenu = document.getElementById('nav-menu');
-
-        menu_btn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
+  
 </body>
 </html>

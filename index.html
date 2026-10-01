@@ -14,8 +14,8 @@
         <!-- Logo -->
         <a href="index.html" class="brand">Hesham</a>
 
-        <!-- Mobile menu Button -->
-        <button class="menu-btn" id="menu-btn">Menu</button>
+        
+        <!-- <button class="menu-btn" id="menu-btn">Menu</button>-->
 
         <!-- Navigation Links -->
         <ul class="nav-menu" id="nav-menu">
@@ -25,13 +25,14 @@
           <li><a href="dashboard.html">Dashboard</a></li>
 
           <!-- Dropdown Menu -->
-          <li class="dropdown">
-            <a href="blog.html">Blog</a>
-            <ul class="dropdown-menu">
-              <li><a href="goals.html">Goals</a></li>
-              <li><a href="direction.html">Direction</a></li>
-            </ul>
-          </li>
+         <div class="menu-btn"><li class="dropdown">
+                    <a href="blog.html">Blog</a>
+                    <ul class="dropdown-menu">
+                        <a href="goals.html">Goals</a></li>
+                        <li><a href="direction.html">Direction</a></li>
+                    </ul>
+                </li></div>
+
 
           <!-- Resume Link -->
           <li><a href="cv/cv.pdf" download class="resume-btn">Resume</a></li>
@@ -50,7 +51,7 @@
         
         <a
           class="nav-link"
-          href="https://www.instagram.com/hes10s"
+          href="https://linktr.ee/ase30az"
           target="_blank"
           class="nav"
           >Contact Me</a
@@ -63,14 +64,6 @@
         </div>
     </section>
 
-    <!-- Script for mobile menu -->
-    <script>
-      const menubtn = document.getElementById("menu-btn");
-      const navMenu = document.getElementById("nav-menu");
-
-      menubtn.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-      });
-    </script>
+ 
   </body>
 </html>

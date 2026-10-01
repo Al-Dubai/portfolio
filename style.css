@@ -26,24 +26,42 @@ body {
 
 .brand {
   color: white;
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
 
 /*  Navigation Menu  */
+nav{
+   list-style: none;
+ 
+  align-items: center;
+  gap: 20px;
+  align-content: space-between;
+ 
+}
+.menu-btn{
+  margin-right: 100px;
+  align-items: center;
+  margin-bottom:22px;
+  
+}
 .nav-menu {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 20px;
+  align-content: space-between;
+  position: relative;
 }
+
 
 .nav-menu a {
   color: rgba(255, 255, 255, 0.7); /* Light grey text */
-  text-decoration: none;
-  font-size: 1rem;
+  text-decoration:none;
+  font-size: 20px;
   transition: color 0.3s ease;
+  position: static;
 }
 
 .nav-menu a:hover,
@@ -55,9 +73,11 @@ body {
   font-weight: bold;
 }
 
-/*  Dropdown Styling (Blog)  */
+/*  Dropdown Styling (Blog) */
 .dropdown {
-  position: relative;
+  position: absolute;
+
+  
 }
 
 .dropdown-menu {
@@ -65,48 +85,31 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #212529;
   list-style: none;
   min-width: 140px;
   padding: 10px 0;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   z-index: 1000;
+  
 }
 
-.dropdown-menu li {
-  padding: 8px 20px;
-}
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
 
-/*   Mobile Responsiveness  */
-.menu-btn {
-  display: none; /* Hidden on desktop */
+/* .dropdown-menu{
+  display: none; 
   background: none;
   border: none;
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
+} */
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  
 }
-
-
-
-  /* Shows menu when button is clicked via JavaScript */
-  .nav-menu.active {
-    display: flex;
-  }
-
-  /* Adjust dropdown for mobile layout */
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    padding-left: 20px;
-  }
-
 
 /* here start dashboard*/
 
