@@ -6,7 +6,5 @@
     
     if (link.getAttribute('href') === currentPath || (currentPath === '' && link.getAttribute('href') === 'index.html')) {
       link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
+    } 
   });
