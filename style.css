@@ -78,12 +78,11 @@ nav {
 }
 
 /* Dropdown Styling (Blog) */
-/* Keep dropdown wrapper absolute so it stays in its original spot */
 .dropdown {
   position: absolute;
 }
 
-/* Ensure the dropdown menu appears directly beneath Blog */
+/* dropdown menu appears directly beneath Blog */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -220,8 +219,6 @@ td {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
   color: #ff3dc8;
 }
-
-/* Change background-color to transparent if you want to remove the dark container */
 .whotext {
   color: aliceblue;
   width: 90%;
