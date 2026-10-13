@@ -89,7 +89,7 @@ nav{
   min-width: 140px;
   padding: 10px 20px;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   z-index: 1000;
   
 }
@@ -244,6 +244,17 @@ td {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+.why-it {
+   width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+  text-align: center;
 }
 .why-it h2 {
   color: gold;
