@@ -159,17 +159,17 @@ td {
   font-size: 30px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
+.indexH {
+  color: rgb(216, 225, 225);
+}
 
 .home .text h4 {
   color: #ffc107;
 }
 
-.home .text h1 {
-  color: #a6a49d;
-}
 
 .home .text h2 {
-  color: #383835;
+  color: #949489;
 }
 
 .home .text p {
@@ -229,7 +229,7 @@ td {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 11px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   text-align: left;
 }
 
