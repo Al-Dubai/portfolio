@@ -16,7 +16,7 @@ html, body {
 
 /*  Main Navbar Styling  */
 .header {
-  background-color: #212529; /* Dark background */
+  background-color: #212529; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-menu a {
-  color: rgba(255, 255, 255, 0.7); /* Light grey text */
+  color: rgba(255, 255, 255, 0.7); 
   text-decoration: none;
   font-size: 20px;
   transition: color 0.3s ease;
